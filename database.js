@@ -10,15 +10,15 @@ const database = mysql.createPool({
   database: process.env.DB_NAME,
 });
 
-database
-  .query("select * from movies")
-  .then((result) => {
-    const movies = result[0];
+// database
+//   .query("select * from movies")
+//   .then((result) => {
+//     const movies = result[0];
 
-    console.log(movies);
-  })
-  .catch((err) => {
-    console.error(err);
-  });
+//     console.log(movies);
+//   })
+//   .catch((err) => {
+//     console.error(err);
+//   });
 
   module.exports = database;
